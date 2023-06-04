@@ -60,5 +60,10 @@ body {
   background-color: navy;
   display: flex;
   flex-direction: column;
-  
+}
+.button-list,
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

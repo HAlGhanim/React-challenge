@@ -3,12 +3,12 @@ import upgrades from "../data/upgrades";
 import Button from "./Button";
 
 const ButtonList = ({
-  count,
   wallet,
   perClick,
-  setCount,
   setWallet,
   setPerClick,
+  perSecond,
+  setPerSecond,
 }) => {
   const buttons = upgrades.filter((upgrade) => {
     return wallet >= upgrade.cost;
@@ -21,6 +21,8 @@ const ButtonList = ({
         setPerClick={setPerClick}
         wallet={wallet}
         setWallet={setWallet}
+        perSecond={perSecond}
+        setPerSecond={setPerSecond}
       />
     );
   });
